@@ -16,8 +16,8 @@ $ npm test  #runs "mocha spec.js"
 For development testing, set the `pageUrl` variable in **spec.js** to your local web server, such as:
 `http://localhost:8080`
 
-<img width=400 alt=screenshot
-   src=https://raw.githubusercontent.com/dnajs/load-web-page-puppeteer-mocha/master/screenshot.png>
+<img src=https://github.com/dnajs/load-web-page-puppeteer-mocha/raw/main/screenshot.png
+   width=400 alt=screenshot>
 
 ### Comparison
 For a jsdom version, check out:<br>
