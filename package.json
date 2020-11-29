@@ -1,0 +1,41 @@
+{
+   "name": "load-web-page-puppeteer-mocha",
+   "description": "Minimal example of loading a web page into puppeteer and testing with mocha",
+   "version": "1.0.0",
+   "license": "MIT",
+   "main": "spec.js",
+   "repository": "github:dnajs/load-web-page-puppeteer-mocha",
+   "homepage": "https://github.com/dnajs/load-web-page-puppeteer-mocha#readme",
+   "bugs": "https://github.com/dnajs/load-web-page-puppeteer-mocha/issues",
+   "docs": "https://github.com/dnajs/load-web-page-puppeteer-mocha#readme",
+   "author": "Center Key (https://centerkey.com)",
+   "keywords": [
+      "javascript",
+      "localhost",
+      "mocha",
+      "nodejs",
+      "puppeteer",
+      "testing",
+      "url"
+   ],
+   "jshintConfig": {
+      "esversion": 9,
+      "strict": "implied",
+      "eqeqeq": true,
+      "undef": true,
+      "unused": true,
+      "node": true,
+      "mocha": true
+   },
+   "scripts": {
+      "pretest": "jshint *.js",
+      "test": "mocha spec*.js --timeout 5000"
+   },
+   "dependencies": {},
+   "devDependencies": {
+      "cheerio": "^1.0.0-rc.3",
+      "jshint": "~2.12",
+      "mocha": "~8.2",
+      "puppeteer": "~5.5"
+   }
+}
