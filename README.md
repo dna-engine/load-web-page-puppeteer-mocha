@@ -5,21 +5,22 @@ _Minimal example of loading a web page into puppeteer and testing with mocha_
 
 [![Build](https://travis-ci.org/dnajs/load-web-page-puppeteer-mocha.svg)](https://travis-ci.org/dnajs/load-web-page-puppeteer-mocha)
 
-### Instructions
+## Instructions
 ```shell
 $ git clone https://github.com/dnajs/load-web-page-puppeteer-mocha
 $ cd load-web-page-puppeteer-mocha
 $ npm install
 $ npm test  #runs "mocha spec.js"
 ```
+<img src=https://github.com/dnajs/load-web-page-puppeteer-mocha/raw/main/screenshot.png
+   width=550 alt=screenshot>
 
+## Dev mode
 For development testing, set the `pageUrl` variable in **spec.js** to your local web server, such as:
 `http://localhost:8080`
 
-<img src=https://github.com/dnajs/load-web-page-puppeteer-mocha/raw/main/screenshot.png
-   width=400 alt=screenshot>
 
-### Comparison
+## Comparison
 For a jsdom version, check out:<br>
 [load-web-page-jsdom-mocha](https://github.com/dnajs/load-web-page-jsdom-mocha)
 
