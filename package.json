@@ -29,7 +29,7 @@
    },
    "scripts": {
       "pretest": "jshint *.js",
-      "test": "mocha spec*.js --timeout 5000"
+      "test": "mocha spec*.js"
    },
    "dependencies": {},
    "devDependencies": {

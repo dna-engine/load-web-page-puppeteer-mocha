@@ -8,13 +8,12 @@ const puppeteer =    require('puppeteer');
 
 // Setup
 const pageUrl = 'https://pretty-print-json.js.org/';
-let web;  //fields: browser, page, response, url, status, statusText, html
+const web = {};  //fields: browser, page, response, url, status, statusText, html
 let $;
 const loadWebPage = () => puppeteer.launch()
-   .then(browserReady(pageUrl))
-   .then(ready => web = ready)
+   .then(browserReady(pageUrl, web))
    .then(() => $ = cheerio.load(web.html));
-const closeWebPage = () => web.browser.close();
+const closeWebPage = () => Promise.resolve(web.browser.close());
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('The web page', () => {
