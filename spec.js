@@ -2,7 +2,7 @@
 
 // Imports
 const assert =       require('assert');
-const browserReady = require('./browser-ready');
+const browserReady = require('puppeteer-browser-ready');
 const cheerio =      require('cheerio');
 const puppeteer =    require('puppeteer');
 
