@@ -13,16 +13,11 @@ $ npm install
 $ npm test  #runs "mocha spec.js"
 ```
 <img src=https://github.com/dnajs/load-web-page-puppeteer-mocha/raw/main/screenshot.png
-   width=550 alt=screenshot>
+   width=600 alt=screenshot>
 
 ## Dev mode
 For development testing, set the `pageUrl` variable in **spec.js** to your local web server, such as:
 `http://localhost:8080`
-
-
-## Comparison
-For a jsdom version, check out:<br>
-[load-web-page-jsdom-mocha](https://github.com/dnajs/load-web-page-jsdom-mocha)
 
 ---
 [dnajs.org](https://dnajs.org) | [MIT License](LICENSE.txt)
