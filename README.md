@@ -19,5 +19,7 @@ $ npm test  #runs "mocha spec.js"
 For development testing, set the `pageUrl` variable in **spec.js** to your local web server, such as:
 `http://localhost:8080`
 
+<br>
+
 ---
 [dnajs.org](https://dnajs.org) | [MIT License](LICENSE.txt)
