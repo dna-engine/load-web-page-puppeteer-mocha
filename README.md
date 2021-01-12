@@ -3,7 +3,7 @@
 
 _Minimal example of loading a web page into puppeteer and testing with mocha_
 
-[![Build](https://travis-ci.org/dnajs/load-web-page-puppeteer-mocha.svg)](https://travis-ci.org/dnajs/load-web-page-puppeteer-mocha)
+[![Build](https://travis-ci.com/dnajs/load-web-page-puppeteer-mocha.svg)](https://travis-ci.com/dnajs/load-web-page-puppeteer-mocha)
 
 ## Instructions
 ```shell
