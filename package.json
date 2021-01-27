@@ -3,6 +3,7 @@
    "description": "Minimal example of loading a web page into puppeteer and testing with mocha",
    "version": "1.0.0",
    "license": "MIT",
+   "type": "module",
    "main": "spec.js",
    "repository": "github:dnajs/load-web-page-puppeteer-mocha",
    "homepage": "https://github.com/dnajs/load-web-page-puppeteer-mocha#readme",

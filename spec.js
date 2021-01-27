@@ -1,9 +1,9 @@
 // Mocha Specification Cases
 
 // Imports
-const assert =           require('assert');
-const { browserReady } = require('puppeteer-browser-ready');
-const puppeteer =        require('puppeteer');
+import assert from 'assert';
+import { browserReady } from 'puppeteer-browser-ready';
+import puppeteer from 'puppeteer';
 
 // Setup
 const pageUrl = 'https://pretty-print-json.js.org/';
