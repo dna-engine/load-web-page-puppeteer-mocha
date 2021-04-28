@@ -34,10 +34,10 @@
    },
    "dependencies": {},
    "devDependencies": {
-      "cheerio": "^1.0.0-rc.5",
+      "cheerio": "^1.0.0-rc.6",
       "jshint": "~2.12",
       "mocha": "~8.3",
-      "puppeteer": "~8.0",
-      "puppeteer-browser-ready": "~0.1"
+      "puppeteer": "~9.0",
+      "puppeteer-browser-ready": "~0.2"
    }
 }
