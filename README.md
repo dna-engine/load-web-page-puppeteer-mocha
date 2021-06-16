@@ -3,7 +3,7 @@
 
 _Minimal example of loading a web page into puppeteer and testing with mocha_
 
-[![Build](https://travis-ci.com/dnajs/load-web-page-puppeteer-mocha.svg)](https://travis-ci.com/dnajs/load-web-page-puppeteer-mocha)
+[![Build](https://github.com/dnajs/load-web-page-puppeteer-mocha/workflows/build/badge.svg)](https://github.com/dnajs/load-web-page-puppeteer-mocha/actions?query=workflow%3Abuild)
 
 ## Instructions
 ```shell
@@ -15,7 +15,7 @@ $ npm test  #runs "mocha spec.js"
 <img src=https://github.com/dnajs/load-web-page-puppeteer-mocha/raw/main/screenshot.png
    width=600 alt=screenshot>
 
-## Dev mode
+## Dev Mode
 For development testing, set the `pageUrl` variable in **spec.js** to your local web server, such as:
 `http://localhost:8080`
 
