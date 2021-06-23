@@ -1,7 +1,7 @@
 // Mocha Specification Cases
 
 // Imports
-import assert from 'assert';
+import { assertDeepStrictEqual } from 'assert-deep-strict-equal';
 import { browserReady } from 'puppeteer-browser-ready';
 import puppeteer from 'puppeteer';
 
@@ -24,7 +24,7 @@ describe('The web page', () => {
    it('has the correct URL -> ' + pageUrl, () => {
       const actual =   { url: web.response.url() };
       const expected = { url: pageUrl };
-      assert.deepStrictEqual(actual, expected);
+      assertDeepStrictEqual(actual, expected);
       });
 
    it('has exactly one header, main, and footer', () => {
@@ -34,7 +34,7 @@ describe('The web page', () => {
          footer: $('body >footer').length,
          };
       const expected = { header: 1, main: 1, footer: 1 };
-      assert.deepStrictEqual(actual, expected);
+      assertDeepStrictEqual(actual, expected);
       });
 
    });
@@ -45,7 +45,7 @@ describe('The document content', () => {
    it('has a 🚀 traveling to 🪐!', () => {
       const actual =   { '🚀': !!web.html.match(/🚀/g), '🪐': !!web.html.match(/🪐/g) };
       const expected = { '🚀': true,                    '🪐': true };
-      assert.deepStrictEqual(actual, expected);
+      assertDeepStrictEqual(actual, expected);
       });
 
    });
