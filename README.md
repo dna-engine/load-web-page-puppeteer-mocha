@@ -12,7 +12,7 @@ $ cd load-web-page-puppeteer-mocha
 $ npm install
 $ npm test  #runs "mocha spec.js"
 ```
-<img src=https://github.com/dnajs/load-web-page-puppeteer-mocha/raw/main/screenshot.png
+<img src=https://raw.githubusercontent.com/dnajs/load-web-page-puppeteer-mocha/main/screenshot.png
    width=600 alt=screenshot>
 
 ## Dev Mode
