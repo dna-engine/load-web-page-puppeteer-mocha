@@ -29,7 +29,7 @@
       "mocha": true
    },
    "scripts": {
-      "pretest": "jshint *.js",
+      "pretest": "jshint . --exclude node_modules",
       "test": "mocha spec*.js --timeout 5000"
    },
    "dependencies": {},
@@ -39,6 +39,6 @@
       "jshint": "~2.13",
       "mocha": "~9.0",
       "puppeteer": "~10.1",
-      "puppeteer-browser-ready": "~0.2"
+      "puppeteer-browser-ready": "~0.3"
    }
 }
