@@ -3,7 +3,7 @@
 
 _Minimal example of loading a web page into puppeteer and testing with mocha_
 
-[![Build](https://github.com/dnajs/load-web-page-puppeteer-mocha/workflows/build/badge.svg)](https://github.com/dnajs/load-web-page-puppeteer-mocha/actions?query=workflow%3Abuild)
+[![Build](https://github.com/dnajs/load-web-page-puppeteer-mocha/workflows/build/badge.svg)](https://github.com/dnajs/load-web-page-puppeteer-mocha/actions/workflows/run-spec-on-push.yaml)
 
 ## Instructions
 ```shell
