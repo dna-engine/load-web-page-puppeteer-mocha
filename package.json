@@ -29,16 +29,16 @@
       "mocha": true
    },
    "scripts": {
-      "pretest": "jshint . --exclude node_modules",
+      "pretest": "jshint . --exclude-path .gitignore",
       "test": "mocha spec*.js --timeout 5000"
    },
    "dependencies": {},
    "devDependencies": {
       "assert-deep-strict-equal": "~1.0",
-      "cheerio": "~1.0.0-rc.10",
+      "cheerio": "~1.0.0-rc.12",
       "jshint": "~2.13",
       "mocha": "~10.0",
-      "puppeteer": "~17.1",
+      "puppeteer": "~18.0",
       "puppeteer-browser-ready": "~0.5"
    }
 }
