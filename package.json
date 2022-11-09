@@ -32,13 +32,12 @@
       "pretest": "jshint . --exclude-path .gitignore",
       "test": "mocha spec*.js --timeout 5000"
    },
-   "dependencies": {},
    "devDependencies": {
       "assert-deep-strict-equal": "~1.0",
       "cheerio": "~1.0.0-rc.12",
       "jshint": "~2.13",
-      "mocha": "~10.0",
-      "puppeteer": "~18.2",
+      "mocha": "~10.1",
+      "puppeteer": "~19.2",
       "puppeteer-browser-ready": "~0.5"
    }
 }
