@@ -37,7 +37,7 @@
       "cheerio": "~1.0.0-rc.12",
       "jshint": "~2.13",
       "mocha": "~10.2",
-      "puppeteer": "~19.5",
-      "puppeteer-browser-ready": "~0.5"
+      "puppeteer": "~19.9",
+      "puppeteer-browser-ready": "~1.0"
    }
 }
