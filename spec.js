@@ -23,12 +23,8 @@ describe('The web page', () => {
       });
 
    it('has exactly one header, main, and footer', () => {
-      const actual =   {
-         header: web.$('body >header').length,
-         main:   web.$('body >main').length,
-         footer: web.$('body >footer').length,
-         };
-      const expected = { header: 1, main: 1, footer: 1 };
+      const actual =   [...web.$('body >*')].map(elem => elem.name);
+      const expected = ['header', 'main', 'footer'];
       assertDeepStrictEqual(actual, expected);
       });
 
