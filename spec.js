@@ -7,7 +7,7 @@ import { browserReady } from 'puppeteer-browser-ready';
 
 // Setup
 const url = 'https://pretty-print-json.js.org/';
-let web;  //fields: browser, page, response, status, location, title, html, $
+let web;  //fields: browser, page, response, status, location, title, html, root
 const loadWebPage =  async () => web = await puppeteer.launch().then(browserReady.goto(url));
 const closeWebPage = async () => await browserReady.close(web);
 before(loadWebPage);
@@ -16,14 +16,28 @@ after(closeWebPage);
 ////////////////////////////////////////////////////////////////////////////////
 describe('The web page', () => {
 
-   it('has the correct URL -> ' + url, () => {
+   it('has the correct URL', () => {
       const actual =   { status: web.status, url: web.location.href };
       const expected = { status: 200,        url: url };
       assertDeepStrictEqual(actual, expected);
       });
 
-   it('has exactly one header, main, and footer', () => {
-      const actual =   [...web.$('body >*')].map(elem => elem.name);
+   it('title starts with "Pretty-Print JSON"', () => {
+      const actual =   { title: web.title.substring(0, 17) };
+      const expected = { title: 'Pretty-Print JSON' };
+      assertDeepStrictEqual(actual, expected);
+      });
+
+   it('body has exactly one header, main, and footer -- node-html-parsed', () => {
+      const getTags =  (elems) => [...elems].map(elem => elem.tagName.toLowerCase());
+      const actual =   getTags(web.root.querySelectorAll('body >*'));
+      const expected = ['header', 'main', 'footer'];
+      assertDeepStrictEqual(actual, expected);
+      });
+
+   it('body has exactly one header, main, and footer -- page.$$eval()', async () => {
+      const getTags =  (elems) => elems.map(elem => elem.nodeName.toLowerCase());
+      const actual =   await web.page.$$eval('body >*', getTags);
       const expected = ['header', 'main', 'footer'];
       assertDeepStrictEqual(actual, expected);
       });
