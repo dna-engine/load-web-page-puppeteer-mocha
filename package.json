@@ -5,7 +5,10 @@
    "license": "MIT",
    "type": "module",
    "main": "spec.js",
-   "repository": "github:dna-engine/load-web-page-puppeteer-mocha",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dna-engine/load-web-page-puppeteer-mocha.git"
+   },
    "homepage": "https://github.com/dna-engine/load-web-page-puppeteer-mocha",
    "bugs": "https://github.com/dna-engine/load-web-page-puppeteer-mocha/issues",
    "docs": "https://github.com/dna-engine/load-web-page-puppeteer-mocha#readme",
