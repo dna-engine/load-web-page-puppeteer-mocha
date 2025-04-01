@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
     # runs-on: ubuntu-latest
     # Error: Failed to launch the browser process! No usable sandbox!
     # https://issues.chromium.org/issues/373753919
