@@ -33,13 +33,13 @@
    },
    "scripts": {
       "pretest": "jshint . --exclude-path .gitignore",
-      "test": "mocha spec*.js --timeout 7000"
+      "test": "mocha spec --timeout 7000"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",
       "jshint": "~2.13",
-      "mocha": "~11.1",
-      "puppeteer": "~24.5",
+      "mocha": "~11.7",
+      "puppeteer": "~24.22",
       "puppeteer-browser-ready": "~1.3"
    }
 }

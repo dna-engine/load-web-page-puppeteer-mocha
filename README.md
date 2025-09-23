@@ -10,7 +10,7 @@ _Minimal example of loading a web page into puppeteer and testing with mocha_
 $ git clone https://github.com/dna-engine/load-web-page-puppeteer-mocha
 $ cd load-web-page-puppeteer-mocha
 $ npm install
-$ npm test  #runs "mocha spec.js"
+$ npm test  #runs "mocha spec"
 ```
 <img src=https://raw.githubusercontent.com/dna-engine/load-web-page-puppeteer-mocha/main/screenshot.png
    width=600 alt=screenshot>
