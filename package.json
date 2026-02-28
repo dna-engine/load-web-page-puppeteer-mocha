@@ -7,11 +7,11 @@
    "module": "spec.js",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/dna-engine/load-web-page-puppeteer-mocha.git"
+      "url": "git+https://github.com/dna-dom/load-web-page-puppeteer-mocha.git"
    },
-   "homepage": "https://github.com/dna-engine/load-web-page-puppeteer-mocha",
-   "bugs": "https://github.com/dna-engine/load-web-page-puppeteer-mocha/issues",
-   "docs": "https://github.com/dna-engine/load-web-page-puppeteer-mocha#readme",
+   "homepage": "https://github.com/dna-dom/load-web-page-puppeteer-mocha",
+   "bugs": "https://github.com/dna-dom/load-web-page-puppeteer-mocha/issues",
+   "docs": "https://github.com/dna-dom/load-web-page-puppeteer-mocha#readme",
    "author": "Center Key (https://centerkey.com)",
    "keywords": [
       "javascript",
